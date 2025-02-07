@@ -1,0 +1,69 @@
+******************************
+Season 1 - Selenium
+******************************
+
+
+
+Stable: 4.28.1 (January 23, 2025)
+
+
+********************************************************
+Day 19 -  7th Feb Friday
+********************************************************
+
+https://www.selenium.dev/
+
+Selenium WebDriver : 
+
+Selenium automates browsers. That's it!
+
+using Selenium we can automate web apps . That's it!
+
+web apps means apps which can be launched on web browsers (chrome , edge , firefox , safari etc ..)
+
+e.g irctc , facebook , etc ..
+
+Selenium API ( Selenium + Java ) -> it comes in a form of jar 
+
+Java
+
+Stable: 4.28.1 (January 23, 2025)
+
+selenium-server-standalone-3.141.59.jar
+
+ChromeDriver(C)
+
+selenium-server-standalone-3.141.59.jar
+
+
+
+ java.lang.IllegalStateException:
+ The path to the driver executable must be set by the 
+ webdriver.chrome.driver system property; 
+ for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. 
+ The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+ 
+ 
+ use below link for downloading .exe files 
+ 
+ https://googlechromelabs.github.io/chrome-for-testing/
+ 
+ chrome version : 133
+
+
+2) using 3.141.59 + WebDriverManager jar 
+
+webdrivermanager-5.9.2-fat.jar
+
+
+???????????????????????????????????????????????
+Assignment : 3
+
+write the scripts to launch 
+firefox and edge browsers 
+
+
+flmtechteam.testing@gmail.com
+
+???????????????????????????????????????????????							
+
