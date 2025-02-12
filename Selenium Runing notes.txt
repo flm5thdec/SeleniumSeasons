@@ -67,3 +67,102 @@ flmtechteam.testing@gmail.com
 
 ???????????????????????????????????????????????							
 
+********************************************************
+Day 20 -  12th Feb Wednesday
+********************************************************
+
+--------------------------------------------
+WebDriver methods
+--------------------------------------------
+org.openqa.selenium
+
+- WebDriver  ( 5 sub interfaces and 13 methods)
+	org.openqa.selenium.WebDriver.Navigation
+	org.openqa.selenium.WebDriver.Options
+	org.openqa.selenium.WebDriver.TargetLocator
+	org.openqa.selenium.WebDriver.Timeouts
+	org.openqa.selenium.WebDriver.Window
+	
+
+findElement(By)
+findElements(By)
+
+
+
+
+
+navigate()
+
+switchTo()
+
+-----------------------------------
+get(String): void  -> this will launch the app (whose URL given as String)
+
+here String is nothing but the URL of web app or Page 
+
+e.g https://www.facebook.com/
+
+-------------------------------------
+
+close():void -> this will close the tab/window on which webdriver focus 
+
+
+--------------------------------------
+
+quit():void -> this will close all the tabs/windows which are opened during the session 
+
+-> it will end the wedriver session that means 
+
+it will kill the chromedriver.exe 
+
+-------------------------------------------
+
+manage(): Options  --> this is used to handle cookies , synchronizations and window sizes 
+
+
+
+addCookie(Cookie)
+deleteAllCookies()
+deleteCookie(Cookie)
+deleteCookieNamed(String)
+getCookieNamed(String)
+getCookies()
+logs()
+timeouts()
+window() : 
+    fullscreen()
+	getPosition()
+	getSize()
+	maximize()  --> this will maximize the browser 
+	minimize()
+	setPosition(Point)
+	setSize(Dimension)
+
+
+driver.manage().window().maximize();
+
+
+--------------------------------------------------
+
+getTitle():String  -->this will return the title of page on which webdriver focus is 
+
+-------------------------------------------------
+getCurrentUrl():String --> this will return the url present in address bar of page on which webdriver focus is 
+----------------------------------------------------
+
+getPageSource():String --> this will return the page source(html content)  of page on which webdriver focus is 
+
+-----------------------------------------------------
+
+getWindowHandle():String --> returns a unique window/tab id in form of hexa decimal ( 0-9 A-F)
+
+e.g 446E742200CB94BB88D868192E234297
+
+-----------------------------------------------------------
+
+getWindowHandles():Set<String> 
+
+ --> returns a unique window/tab id's of the opened windows/tabs in that session  in form of hexa decimal ( 0-9 A-F)
+
+
+

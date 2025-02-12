@@ -1,6 +1,8 @@
 package browerlaunching;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 //import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,7 +18,7 @@ public class ChromeLaunch1 {
 		//System.setProperty("webdriver.chrome.driver", "D:\\FLM5thDec\\jars\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
 		
 		new ChromeDriver();
-		
+	
 
 	}
 
