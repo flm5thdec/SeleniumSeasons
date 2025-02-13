@@ -84,16 +84,12 @@ org.openqa.selenium
 	org.openqa.selenium.WebDriver.Window
 	
 
-findElement(By)
-findElements(By)
 
 
 
 
 
-navigate()
 
-switchTo()
 
 -----------------------------------
 get(String): void  -> this will launch the app (whose URL given as String)
@@ -165,4 +161,113 @@ getWindowHandles():Set<String>
  --> returns a unique window/tab id's of the opened windows/tabs in that session  in form of hexa decimal ( 0-9 A-F)
 
 
+********************************************************
+Day 21 -  13th Feb Thursday
+********************************************************
 
+
+navigate():Navigation
+
+	back()
+	forward()
+	refresh()
+	to(String)
+	to(URL)
+	
+--------------------------------------------------------
+
+switchTo():TargetLocator - this is used to handle alerts, frames and window/tabs 
+
+	activeElement()
+	alert()
+	defaultContent()
+	frame(int)
+	frame(String)
+	frame(WebElement)
+	newWindow(WindowType)
+	parentFrame()
+	window(String)
+
+----------------------------------------------
+
+findElement(By):WebElement 
+-> this will focus on the element based on locator strategy
+
+-----------------------------------------------
+findElements(By):List<WebElement> 
+
+------------------------------------------------
+
+Locators Strategy or By class methods 
+
+className(String)
+cssSelector(String)
+id(String)
+linkText(String)
+name(String)
+partialLinkText(String)
+tagName(String)
+xpath(String)
+
+
+HTML Terminologies 
+
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="nir3xv">
+
+<a href="Register.php">New User Register Here</a>
+
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" .....>
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" .....>text on element</tagname>
+
+
+1) locators based on attributes 
+
+id(String):By
+name(String)
+className(String)
+
+2) based on text present on links 
+
+linkText(String):By 
+partialLinkText(String):By 
+
+3) based on attributes , tagName and text on element 
+
+xpath(String)
+
+cssSelector(String)
+
+4) based on only tagname  --> not prefered for single element focus ,mostly used for multiple elements 
+
+tagName(String):By 
+
+------------------------------------------
+WebElement Methods 
+------------------------------------------
+
+clear()
+click()
+findElement(By)
+findElements(By)
+getAttribute(String)
+getCssValue(String)
+getLocation()
+getRect()
+getSize()
+getTagName()
+getText()
+isDisplayed()
+isEnabled()
+isSelected()
+sendKeys(CharSequence...)
+submit()
+
+-----------------------------
+getAccessibleName()
+getAriaRole()
+getDomAttribute(String)
+getDomProperty(String)
+getShadowRoot()
