@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>selenium-java-4.18.0</name>
+			<type>2</type>
+			<location>D:/FLM5thDec/jars/selenium-java-4.18.0</location>
+		</link>
+	</linkedResources>
 </projectDescription>

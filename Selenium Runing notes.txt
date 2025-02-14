@@ -271,3 +271,85 @@ getAriaRole()
 getDomAttribute(String)
 getDomProperty(String)
 getShadowRoot()
+
+
+********************************************************
+Day 22 -  14th Feb Friday
+********************************************************
+
+
+------------------------------------------
+WebElement Methods 
+------------------------------------------
+
+
+sendKeys(CharSequence...): void --> this will type the text given in form od String  on the Webelement 
+
+CharSequence... means can be no char or single or sequence of chars (String) 
+
+will be used on textboxes,textarea , dropdown etc .. 
+
+------------------------------------------
+click():void 
+
+this will click the element on web page 
+
+textbox,img,link, radio button etc ..
+---------------------------------------------------
+clear():void 
+
+this will clear the text on textbox 
+
+---------------------------------------------------
+getAttribute(String):String 
+
+case 1 : attribute having value 
+
+o/p : value of attribute 
+
+case 2: attribute not present
+
+o/p : null 
+
+case 3: attribute is present but value is not assigned (mostly for checkboxes , radio button)
+
+o/p : true 
+
+---------------------------------------------------------------------------
+
+getCssValue(String): String 
+
+CSS stands for Cascading Style Sheets 
+
+to retrive the css values like font-size , font-weight , color etc ..
+
+---------------------------------------------------------------------------
+
+getText():String 
+
+to retrive the text present on Webelement
+
+
+---------------------------------------------------------------------------
+getLocation():Point ( x,y coordinates)
+
+getSize(): Dimension ( height and width)
+
+getRect(): Rectangle ( x,y coordinates , height and width)
+
+------------------------------------------------------------------------------
+
+isDisplayed():boolean --> to check element is present in DOM and displayed
+isEnabled():boolean --> to check element is aviable to get any action 
+isSelected():boolean --> used to check the checkboxes, dropdown, radio button etc ..
+
+---------------------------------------------------------------------------
+
+getTagName():String 
+
+it retrives the tagname of Webelement
+
+-------------------------------------------------------------------------
+
+submit():void 
+
