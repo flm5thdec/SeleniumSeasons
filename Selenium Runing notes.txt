@@ -460,3 +460,31 @@ send the code/screenshot to below email id
 flmtechteam.testing@gmail.com
 
 ???????????????????????????????????????????????	
+
+
+********************************************************
+Day  -  3rd Mar Monday
+********************************************************
+
+Links Testing 
+
+findElements(By):List<WebElement> 
+
+
+<a href="ForgotPassword.php">Forgot Password?</a>
+<a href="Register.php">New User Register Here</a>
+<a href="http://www.adactin.com">Adactin.com</a>
+
+Locators Strategy or By class methods 
+
+className(String)
+cssSelector(String)
+id(String)
+linkText(String)
+name(String)
+partialLinkText(String)
+tagName(String)
+xpath(String)
+
+
+//div[text()='Make Money with Us']/parent::div
