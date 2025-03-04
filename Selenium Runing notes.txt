@@ -488,3 +488,56 @@ xpath(String)
 
 
 //div[text()='Make Money with Us']/parent::div
+
+********************************************************
+Day  -  4th Mar Tuesday
+********************************************************
+
+Framework - set of rules ==>
+so that everyone follows the same instructions and will be on same page 
+
+Unit Testing Frameworks
+
+java - junit / testng
+.net - Nunit 
+python - pytest etc 
+
+						Frameworks
+						
+			
+				predefined				user-defined 
+				or							- Data Driven / Key Driven / Behaviour Driven etc ..
+				InBuilt
+				(junit/testNg/ etc )		
+				
+TestNG : inbuilt framework used for java programing 
+
+Junit + NUnit  ==> TestNG 
+
+here NG => next Generation
+
+-----------------------------------
+installation of TestNG 
+
+many ways 
+
+1) using Eclipse market place (found as plugin)
+
+Install via Eclipse Marketplace
+Open Eclipse.
+Go to Help → Eclipse Marketplace.
+In the search bar, type TestNG and press Enter.
+Click Install on the TestNG plugin.
+Follow the on-screen instructions and accept the license agreements.
+Click Finish, and restart Eclipse after installation.
+
+
+-----------------------------------------------
+Annotations in TestNG
+-----------------------------------------------
+
+
+@Test  ==> almost similar to main method  ==> steps of test case to be executed  
+
+
+Note : execution will be done in alphabetic order of method name 
