@@ -541,3 +541,89 @@ Annotations in TestNG
 
 
 Note : execution will be done in alphabetic order of method name 
+
+********************************************************
+Day  -  4th Mar Tuesday
+********************************************************
+
+-----------------------------------------------
+Annotations in TestNG (cont ..)
+-----------------------------------------------
+
+
+@BeforeMethod ==> the annotated method will be executed before each and every @Test method 
+
+@AfterMethod ==> the annotated method will be executed after each and every @Test method 
+
+
+--------------------------------------------------
+Xpath writing Techniques
+--------------------------------------------------
+Xpath means XML path 
+
+it's a quesry lang to find XML nodes 
+
+HTML is an implementation of XML 
+
+so we can use Xpath to find HTML nodes as well 
+
+									xpath
+									
+									
+					absolute 				relative 
+
+absolute xpath : starts from root (root means html)  starts with /html 
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input
+
+/html/body/table[2]/tbody/tr/td[2]/form/table/tbody/tr[2]/td[2]/input	
+
+relative  xpath : starts from some node other than root ( //tagname )				
+
+
+
+HTML Terminologies 
+
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="nir3xv">
+
+<a href="Register.php">New User Register Here</a>
+
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" .....>
+
+<tagname attribute1="value of attribute1" attribute2="value of attribute2" .....>text on element</tagname>
+
+
+--------------------------------------
+xpath based on tagname and attribute 
+--------------------------------------
+
+//tagname[@attribute='value of attribute']
+
+//input[@id='username']
+
+//input[@class='login_input' and @type='password']
+
+
+-------------------------------------------
+xpath based on tagname and text on element
+--------------------------------------------
+
+//tagname[text()='text on element']
+
+//td[text()='Important Note:']
+
+
+------------------------------------------
+xpath using contains function
+------------------------------------------
+
+//tagname[contains(@attribute,'subset of value of attribute')]
+
+//img[contains(@src,'google-play')]
+
+//tagname[contains(text(),'subset of text on element')]
+
+//a[contains(text(),'User Register')]
+
