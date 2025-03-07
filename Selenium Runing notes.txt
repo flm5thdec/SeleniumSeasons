@@ -627,3 +627,35 @@ xpath using contains function
 
 //a[contains(text(),'User Register')]
 
+********************************************************
+Day  -  7th Mar Friday
+********************************************************
+
+------------------------------------------------
+Xpath Axes 
+------------------------------------------------
+
+//div[text()='Make Money with Us']/parent::div
+
+//div[@class='navFooterLinkCol navAccessibility']/child::div[text()='Connect with Us']
+
+//div[@class='navFooterLinkCol navAccessibility']/descendant::a[text()='Supply to Amazon']
+
+
+
+-------------------------------
+Miscellenous Actions
+-------------------------------
+
+Action(I) 
+		perform():void 
+		
+Actions.class
+
+		Actions(WebDriver)
+		
+moveToElement(WebElement):Actions
+		
+		
+Mouse Hovering : 
+
