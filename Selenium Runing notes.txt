@@ -659,3 +659,102 @@ moveToElement(WebElement):Actions
 		
 Mouse Hovering : 
 
+
+********************************************************
+Day  -  10th Mar Monday
+********************************************************
+
+
+Drag and Drop :
+
+dragAndDrop(WebElement, WebElement):Action (first Webelement is source , Second WebElement is destination)
+dragAndDropBy(WebElement, int, int):Action ( first int is x-axis offset , second int is y-axis offset)
+
+
+
+------------------------------
+org.openqa.selenium.NoSuchElementException:
+ no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='draggable']"}
+
+
+Reason 1: if the locator strategy is incorrect 
+Solution 1: correct the locator strategy
+
+
+Reason 2: synchronization issue or time out or loading issue 
+Solution 2: introduce proper wait mechanism 
+
+Reason 3: if the element is present in a frame/iframe 
+Soultion 3: switch to that frame 
+
+
+Reason 4: if the element is present in another window/tab 
+Soultion 3: switch to window/tab 
+
+
+????????????????????????????????????????????????????????????
+Assignment - 8
+
+In https://emicalculator.net/
+
+drag "Home Loan Amount" to 75 lakhs 
+
+drag  "Interest Rate" to 12.5% 
+
+drag "Loan Tenure" to 15 years 
+
+hint : 
+use dragAndDropBy(WebElement, int, int)
+
+here if you want to drag to RHS (x-axis) the positive value 
+
+and if you want to drag to LHS (x-axis) the negative value 
+
+???????????????????????????????????????????????????????????????
+
+
+------------------------------------------
+Right Click :
+
+contextClick()
+contextClick(WebElement)
+
+--------------------------------------------
+
+Double Click :
+
+doubleClick()
+doubleClick(WebElement)
+
+---------------------------------------------
+
+????????????????????????????????????????????????????????????
+Assignment - 9
+
+https://selenium-prd.firebaseapp.com/
+
+admin123@gmail.com
+
+admin123
+
+Mouse hover on "Intractions" --> click on "Double Click"
+
+again do the same 
+
+Mouse hover on "Intractions" --> click on "Double Click"
+
+use doubleClick method to double click on "Double Click" until "Count = 5 " times 
+
+
+??????????????????????????????????????????????????????????????????
+
+
+-----------------------------------------------------------------
+Exception in thread "main" org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+ 
+
+Reason : when there is any change in DOM (document object model) 
+
+
+

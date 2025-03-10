@@ -8,30 +8,32 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MouseHover {
+public class DragAndDrop {
 	
+
 	WebDriver driver;
 	
 	@BeforeMethod
 	public void setUp()
 	{
 	  driver=	new ChromeDriver();
-	  driver.get("https://www.kvb.co.in/");
+	  driver.get("https://jqueryui.com/droppable/");
 	  driver.manage().window().maximize();
 	  
 	}
 	
 	@Test
-	public void mouseHoverTest() throws InterruptedException
+	public void dragAndDropTest() throws InterruptedException
 	{
 		Actions action=new Actions(driver);
-		action.moveToElement(driver.findElement(By.xpath("//a[text()='Personal']")))
-		          .pause(2000)
-		          .moveToElement(driver.findElement(By.xpath("//a[text()='Loans ']")))
-		          .pause(2000)
-		          .click(driver.findElement(By.xpath("//a[text()='Two Wheeler Loan']")))
-		          .build()     //integrate
-		          .perform();   //execute
+		
+		//to switch to frame 
+		driver.switchTo().frame(0);
+		
+		action.dragAndDrop(driver.findElement(By.xpath("//div[@id='draggable']")),
+				 driver.findElement(By.xpath("//div[@id='droppable']")))
+				.build().perform();
+		
 		Thread.sleep(3000);
 		
 	}
