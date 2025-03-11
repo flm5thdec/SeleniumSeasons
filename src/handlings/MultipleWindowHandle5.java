@@ -11,7 +11,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MultipleWindowHandle {
+import base.Utils;
+
+public class MultipleWindowHandle5 {
 	
 WebDriver driver;
 	
@@ -24,6 +26,7 @@ WebDriver driver;
 	  
 	}
 	
+	
 	@Test
 	public void multipleWindowHandleTest() throws InterruptedException
 	{
@@ -33,25 +36,8 @@ WebDriver driver;
 		
 		driver.findElement(By.xpath("//img[contains(@src,'google-play')]")).click();
 		
-		// capture the window/tabs Ids/handles
-		
-		Set<String> allWindowIds=driver.getWindowHandles();
-		
-		//switch to google play store tab 
-		
-		Iterator<String> it=allWindowIds.iterator();
-		
-		while(it.hasNext())
-		{
-			driver.switchTo().window(it.next());
+		Utils.switchToWindow(driver,"Not Found");
 			
-			if(driver.getTitle().equals("Not Found"))
-			{
-				break;
-			}
-			
-		}
-		
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("selenium");
 		
 		driver.findElement(By.xpath("//input[@value='Search']")).click();
@@ -62,10 +48,35 @@ WebDriver driver;
 		
 		driver.switchTo().window(homeWindowId);
 		
+		Thread.sleep(3000);
 		
+		driver.findElement(By.xpath("//img[contains(@src,'ios')]")).click();
+		
+		Utils.switchToWindow(driver,"TestFlight - Apple");
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//a[text()='Terms of Service']")).click();
+		
+		Thread.sleep(2000);
+		
+		driver.switchTo().window(homeWindowId);
+		
+		Thread.sleep(2000);
+		
+		Utils.switchToWindow(driver,"Legal - Apple Media Services - Apple");
+		
+		driver.findElement(By.xpath("//a[text()='Choose your country/region']")).click();
+		
+		Thread.sleep(2000);
+		
+		driver.switchTo().window(homeWindowId);
 		
 	}
 	
+	
+
+
 	@AfterMethod
 	public void teardown() throws InterruptedException
 	{

@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MultipleWindowHandle {
+public class MultipleWindowHandle4 {
 	
 WebDriver driver;
 	
@@ -24,6 +24,7 @@ WebDriver driver;
 	  
 	}
 	
+	
 	@Test
 	public void multipleWindowHandleTest() throws InterruptedException
 	{
@@ -33,7 +34,45 @@ WebDriver driver;
 		
 		driver.findElement(By.xpath("//img[contains(@src,'google-play')]")).click();
 		
-		// capture the window/tabs Ids/handles
+		switchToWindow("Not Found");
+			
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("selenium");
+		
+		driver.findElement(By.xpath("//input[@value='Search']")).click();
+		
+		Thread.sleep(3000);
+		
+		//switch to home window 
+		
+		driver.switchTo().window(homeWindowId);
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//img[contains(@src,'ios')]")).click();
+		
+		switchToWindow("TestFlight - Apple");
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//a[text()='Terms of Service']")).click();
+		
+		Thread.sleep(2000);
+		
+		driver.switchTo().window(homeWindowId);
+		
+		Thread.sleep(2000);
+		
+		switchToWindow("Legal - Apple Media Services - Apple");
+		
+		driver.findElement(By.xpath("//a[text()='Choose your country/region']")).click();
+		
+		Thread.sleep(2000);
+		
+		driver.switchTo().window(homeWindowId);
+		
+	}
+	
+	private void switchToWindow(String title) {
 		
 		Set<String> allWindowIds=driver.getWindowHandles();
 		
@@ -45,27 +84,16 @@ WebDriver driver;
 		{
 			driver.switchTo().window(it.next());
 			
-			if(driver.getTitle().equals("Not Found"))
+			if(driver.getTitle().equals(title))
 			{
 				break;
 			}
 			
 		}
 		
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("selenium");
-		
-		driver.findElement(By.xpath("//input[@value='Search']")).click();
-		
-		Thread.sleep(3000);
-		
-		//switch to home window 
-		
-		driver.switchTo().window(homeWindowId);
-		
-		
-		
 	}
-	
+
+
 	@AfterMethod
 	public void teardown() throws InterruptedException
 	{

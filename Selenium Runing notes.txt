@@ -754,7 +754,50 @@ Exception in thread "main" org.openqa.selenium.StaleElementReferenceException:
 stale element reference: stale element not found
  
 
-Reason : when there is any change in DOM (document object model) 
+Reason : when there is any change in DOM (document object model) , the reference in UI gets older 
+
+solution : reinitialize the WebElement/WebElements
 
 
+
+********************************************************
+Day  -  11th Mar Tuesday
+********************************************************
+//div[@id='loanamountslider']/child::span[@tabindex='0']
+
+//span[@tabindex='0']
+
+using Selectors-hub plugin 
+
+//div[@id='loanamountslider']//span[@class='ui-slider-handle ui-corner-all ui-state-default']
+
+410
+490 --> 80
+
+//div[@id='loaninterestslider']/child::span[@tabindex='0']
+
+421
+571 - 150
+
+
+679
+571  ==> - 108
+
+----------------------------------
+Multiple window / tab handling 
+----------------------------------
+
+??????????????????????????????????????????????????????
+Assignment - 10
+https://www.irctc.co.in/nget/train-search
+
+click on each link in "Get Connected with us on social networks" and 
+switch to that corresposding new tab and 
+print the title and url of that new tab 
+
+please send the code to below email id :
+
+flmtechteam.testing@gmail.com
+
+???????????????????????????????????????????????????????
 

@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class MultipleWindowHandle {
+public class MultipleWindowHandle3 {
 	
 WebDriver driver;
 	
@@ -62,7 +62,61 @@ WebDriver driver;
 		
 		driver.switchTo().window(homeWindowId);
 		
+		Thread.sleep(3000);
 		
+		driver.findElement(By.xpath("//img[contains(@src,'ios')]")).click();
+		
+		//switch to TestFlight - apple tab 
+		
+		 allWindowIds=driver.getWindowHandles();
+		
+		//switch to google play store tab 
+		
+		 it=allWindowIds.iterator();
+		
+		while(it.hasNext())
+		{
+			driver.switchTo().window(it.next());
+			
+			if(driver.getTitle().equals("TestFlight - Apple"))
+			{
+				break;
+			}
+			
+		}
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//a[text()='Terms of Service']")).click();
+		
+		Thread.sleep(2000);
+		
+		driver.switchTo().window(homeWindowId);
+		
+		Thread.sleep(2000);
+		
+		 allWindowIds=driver.getWindowHandles();
+			
+			//switch to Legal - Apple Media Services - Apple tab 
+			
+			 it=allWindowIds.iterator();
+			
+			while(it.hasNext())
+			{
+				driver.switchTo().window(it.next());
+				
+				if(driver.getTitle().equals("Legal - Apple Media Services - Apple"))
+				{
+					break;
+				}
+				
+			}
+		
+		driver.findElement(By.xpath("//a[text()='Choose your country/region']")).click();
+		
+		Thread.sleep(2000);
+		
+		driver.switchTo().window(homeWindowId);
 		
 	}
 	
