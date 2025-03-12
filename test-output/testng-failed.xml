@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignments.A10">
+      <class name="handlings.FrameHandling2">
         <methods>
+          <include name="dragAndDropTest"/>
           <include name="setUp"/>
           <include name="teardown"/>
-          <include name="a10Test"/>
         </methods>
-      </class> <!-- assignments.A10 -->
+      </class> <!-- handlings.FrameHandling2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-11T20:24:45 IST" name="Default suite" finished-at="2025-03-11T20:24:54 IST" duration-ms="8988">
+  <suite started-at="2025-03-12T20:11:22 IST" name="Default suite" finished-at="2025-03-12T20:11:53 IST" duration-ms="30398">
     <groups>
     </groups>
-    <test started-at="2025-03-11T20:24:45 IST" name="Default test" finished-at="2025-03-11T20:24:54 IST" duration-ms="8988">
-      <class name="assignments.A10">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:assignments.A10@5f9b2141]" started-at="2025-03-11T20:24:45 IST" name="setUp" finished-at="2025-03-11T20:24:48 IST" duration-ms="2377" status="PASS">
+    <test started-at="2025-03-12T20:11:22 IST" name="Default test" finished-at="2025-03-12T20:11:53 IST" duration-ms="30398">
+      <class name="assignments.MultipleWindowHandling">
+        <test-method is-config="true" signature="launchWebSite()[pri:0, instance:assignments.MultipleWindowHandling@4efc180e]" started-at="2025-03-12T20:11:22 IST" name="launchWebSite" finished-at="2025-03-12T20:11:29 IST" duration-ms="6412" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="a10Test()[pri:0, instance:assignments.A10@5f9b2141]" started-at="2025-03-11T20:24:48 IST" name="a10Test" finished-at="2025-03-11T20:24:52 IST" duration-ms="4160" status="PASS">
+        </test-method> <!-- launchWebSite -->
+        <test-method signature="multipleWindowHandling()[pri:0, instance:assignments.MultipleWindowHandling@4efc180e]" started-at="2025-03-12T20:11:29 IST" name="multipleWindowHandling" finished-at="2025-03-12T20:11:50 IST" duration-ms="21124" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- a10Test -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:assignments.A10@5f9b2141]" started-at="2025-03-11T20:24:52 IST" name="teardown" finished-at="2025-03-11T20:24:54 IST" duration-ms="2418" status="PASS">
+        </test-method> <!-- multipleWindowHandling -->
+        <test-method is-config="true" signature="endWebSite()[pri:0, instance:assignments.MultipleWindowHandling@4efc180e]" started-at="2025-03-12T20:11:50 IST" name="endWebSite" finished-at="2025-03-12T20:11:53 IST" duration-ms="2806" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- assignments.A10 -->
+        </test-method> <!-- endWebSite -->
+      </class> <!-- assignments.MultipleWindowHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
