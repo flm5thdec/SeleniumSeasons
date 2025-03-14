@@ -941,3 +941,63 @@ webklipper-publisher-widget-container-notification-frame
 
  Reason : wrong xpath syntax
  Solution : correct the xpath 
+ 
+ ********************************************************
+Day  -  14th Mar Friday
+********************************************************
+
+
+how to take screenshot ?
+
+TakesScreenshot(I)
+
+getScreenshotAs(OutputType<X>):X 
+
+OutputType(I): 
+BASE64 : OutputType<String>
+BYTES : OutputType<byte[]>
+FILE : OutputType<File>
+
+FileUtils class is present in below jar 
+
+https://commons.apache.org/io/download_io.cgi
+
+??????????????????????????????????????????????????????????????
+
+launch irctc website 
+
+https://www.irctc.co.in
+
+click on each "Get Connected with us on social networks" links 
+
+and take screenshot after cliking each link with respective names 
+
+????????????????????????????????????????????????????????????????
+
+--------------------------------------------------------------------
+Waits concepts or Synchonization
+---------------------------------------------------------------------
+
+1) Hard Wait using Thread.sleep(3000) ==> not encourage 
+
+waitsTest  (6.592 s)
+
+2) Implicit Wait 
+
+driver.manage().timeouts().implicitlyWait(Duration)
+this statement is implied for all "driver.findElement(" statement 
+
+waitsTest  (1.325 s)
+
+3) Explicit Wait 
+
+java.lang.AssertionError: expected [5] but found [2+3]
+
+Wait<F>(I):
+
+until(Function<? super F, T>):T 
+
+
+FluentWait<T>(C) :  implements Wait(I)   ==> fluent Wait 
+
+WebDriverWait(C) : extends FluentWait<T>(C)  ==> Explicit Wait 

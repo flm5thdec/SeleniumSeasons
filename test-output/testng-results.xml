@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-13T20:13:46 IST" name="Default suite" finished-at="2025-03-13T20:14:05 IST" duration-ms="19075">
+  <suite started-at="2025-03-14T20:24:55 IST" name="Default suite" finished-at="2025-03-14T20:25:51 IST" duration-ms="56038">
     <groups>
     </groups>
-    <test started-at="2025-03-13T20:13:46 IST" name="Default test" finished-at="2025-03-13T20:14:05 IST" duration-ms="19075">
-      <class name="javascriptexecutorandscreenshots.Highlight2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:javascriptexecutorandscreenshots.Highlight2@5f9b2141]" started-at="2025-03-13T20:13:46 IST" name="setUp" finished-at="2025-03-13T20:13:51 IST" duration-ms="5089" status="PASS">
+    <test started-at="2025-03-14T20:24:55 IST" name="Default test" finished-at="2025-03-14T20:25:51 IST" duration-ms="56038">
+      <class name="assignments.Irctc2">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:assignments.Irctc2@57af006c]" started-at="2025-03-14T20:24:55 IST" name="setUp" finished-at="2025-03-14T20:25:06 IST" duration-ms="10282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="dragAndDropTest()[pri:0, instance:javascriptexecutorandscreenshots.Highlight2@5f9b2141]" started-at="2025-03-13T20:13:51 IST" name="dragAndDropTest" finished-at="2025-03-13T20:14:01 IST" duration-ms="10553" status="PASS">
+        <test-method signature="IRCTC_AssignmentTest()[pri:0, instance:assignments.Irctc2@57af006c]" started-at="2025-03-14T20:25:06 IST" name="IRCTC_AssignmentTest" finished-at="2025-03-14T20:25:51 IST" duration-ms="45171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAndDropTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:javascriptexecutorandscreenshots.Highlight2@5f9b2141]" started-at="2025-03-13T20:14:01 IST" name="teardown" finished-at="2025-03-13T20:14:05 IST" duration-ms="3400" status="PASS">
+        </test-method> <!-- IRCTC_AssignmentTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:assignments.Irctc2@57af006c]" started-at="2025-03-14T20:25:51 IST" name="teardown" finished-at="2025-03-14T20:25:51 IST" duration-ms="558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- javascriptexecutorandscreenshots.Highlight2 -->
+      </class> <!-- assignments.Irctc2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

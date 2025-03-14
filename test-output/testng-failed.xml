@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="javascriptexecutorandscreenshots.Highlight2">
+      <class name="assignments.Irctc2">
         <methods>
-          <include name="dragAndDropTest"/>
-          <include name="teardown"/>
           <include name="setUp"/>
+          <include name="IRCTC_AssignmentTest"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- javascriptexecutorandscreenshots.Highlight2 -->
+      </class> <!-- assignments.Irctc2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
