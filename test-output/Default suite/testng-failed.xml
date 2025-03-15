@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignments.Irctc2">
+      <class name="radiocheckwebtables.CheckBox">
         <methods>
-          <include name="setUp"/>
-          <include name="IRCTC_AssignmentTest"/>
           <include name="teardown"/>
+          <include name="checkBoxTest2"/>
+          <include name="checkBoxTest3"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- assignments.Irctc2 -->
+      </class> <!-- radiocheckwebtables.CheckBox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

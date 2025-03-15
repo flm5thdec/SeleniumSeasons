@@ -982,7 +982,8 @@ Waits concepts or Synchonization
 
 waitsTest  (6.592 s)
 
-2) Implicit Wait 
+2) Implicit Wait ==> only checks presence of Element in DOM (Document Object Model )
+==> in real time , we don't use Implicit Wait
 
 driver.manage().timeouts().implicitlyWait(Duration)
 this statement is implied for all "driver.findElement(" statement 
@@ -1001,3 +1002,45 @@ until(Function<? super F, T>):T
 FluentWait<T>(C) :  implements Wait(I)   ==> fluent Wait 
 
 WebDriverWait(C) : extends FluentWait<T>(C)  ==> Explicit Wait 
+
+
+
+-----------------------------------------
+Explicit Wait using WebDriverWait(C)
+-----------------------------------------
+
+
+WebDriverWait(WebDriver, Duration)
+WebDriverWait(WebDriver, Duration, Duration)
+WebDriverWait(WebDriver, Duration, Duration, Clock, Sleeper)
+
+-----------------------------------------
+Explicit Wait using FluentWait(C)
+-----------------------------------------
+
+till selenium 4 version , i.e 3.141.59
+
+WebDriverWait myWait=new WebDriverWait(driver, long);
+
+here long means always Seconds 
+
+
+so there are few improvements can be done for Explicit Wait using WebDriverWait
+
+1. here duration is always Seconds 
+2. polling time is always 500 millis
+3. we should we try catch mechanism to handle TimeOutException 
+
+
+all these 3 can be achived using Fluent Wait 
+
+-----------------------------------------
+Explicit Wait using FluentWait(C)
+-----------------------------------------
+
+FluentWait(T)
+FluentWait(T, Clock, Sleeper)
+
+----------------------------------------------
+Radio Button
+----------------------------------------------
