@@ -942,7 +942,7 @@ webklipper-publisher-widget-container-notification-frame
  Reason : wrong xpath syntax
  Solution : correct the xpath 
  
- ********************************************************
+********************************************************
 Day  -  14th Mar Friday
 ********************************************************
 
@@ -989,6 +989,11 @@ driver.manage().timeouts().implicitlyWait(Duration)
 this statement is implied for all "driver.findElement(" statement 
 
 waitsTest  (1.325 s)
+
+ 
+********************************************************
+Day  -  15th Mar Saturday
+********************************************************
 
 3) Explicit Wait 
 
@@ -1044,3 +1049,18 @@ FluentWait(T, Clock, Sleeper)
 ----------------------------------------------
 Radio Button
 ----------------------------------------------
+
+<input type="range" class="s-range-input" id="p_36/range-slider_slider-item_lower-bound-slider" 
+value="0" min="0" max="188" step="1" aria-valuetext="₹54">
+
+
+Here:
+
+min = 0 (minimum value)
+max = 188 (maximum value)
+step = 1 (increments per move)
+value = 0 (current position)
+
+int targetValue = min + (int) ((max - min) * percentage);
+
+0 + 
