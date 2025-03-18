@@ -691,6 +691,9 @@ Soultion 3: switch to that frame
 Reason 4: if the element is present in another window/tab 
 Soultion 3: switch to window/tab 
 
+Reason 5: if the element is present in a shadowDOM
+Soultion 3: using Shadow DOM hanling or focusing on Shadow Root 
+
 
 ????????????????????????????????????????????????????????????
 Assignment - 8
@@ -1064,3 +1067,106 @@ value = 0 (current position)
 int targetValue = min + (int) ((max - min) * percentage);
 
 0 + 
+
+********************************************************
+Day  -  17th Mar Monday 
+********************************************************
+
+							Web Tables
+
+				static 					dynamic 
+				
+WebTable HTML Terminologies
+
+<table 
+	<th 
+    <tbody 
+        <tr 
+          <td 
+          <td 
+		<tr 
+          <td 
+          <td 
+ 		  
+				
+Static Web Table 				
+
+//table/tbody/tr[1]/td[1] 	//table/tbody/tr[1]/td[2] ....//table/tbody/tr[1]/td[8]
+//table/tbody/tr[2]/td[1]
+:
+:
+//table/tbody/tr[36]/td[1]
+
+
+String part1="//table/tbody/tr[";
+String part2="]/td[";
+String part3="]";
+
+				
+Dynamic Web Table 	: 
+
+
+--------------------------------
+file upload
+--------------------------------
+
+Robot Class :
+
+
+
+D:\FLM5thDecWS\SeleniumSeasons\Frames handling.png
+
+
+Congratulations! You must have the proper credentials.
+
+
+********************************************************
+Day  -  18th Mar Tuesday 
+********************************************************
+
+Shadow DOM Hanlding :
+
+org.openqa.selenium.NoSuchElementException: no such element: 
+Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+
+Reason 5: if the element is present in a shadowDOM
+Soultion 3: using Shadow DOM hanling or focusing on Shadow Root 
+
+getShadowRoot():SearchContext 
+
+in Shadow DOM , the elements can be focus using only cssSelector locator 
+
+tagname and attributes 
+
+cssSelector syntax : tagName[attribute='value of attribute']
+
+input[type='text']
+
+
+?????????????????????????????????????????????????????
+Assignment-11
+
+https://www.salesforce.com/in/
+
+mouse hover on login 
+
+hint : use shadow dom handling 
+
+??????????????????????????????????????????????????????
+
+--------------------
+InvalidArgumentException 
+org.openqa.selenium.InvalidArgumentException: invalid argument: invalid locator
+
+Reason : in Shadow DOM , only cssSelector is valid 
+Solution : use cssSelector strategy
+
+-----------------------------------
+Broken Links 
+------------------------------------
+
+URL
+
+HttpURLConnection 
+
+

@@ -41,8 +41,18 @@ public class AmazonScroll {
 		WebElement slider = driver.findElement(By.xpath("//input[@type='range']"));
 		
 			
-		js.executeScript("arguments[0].aria-valuetext == '₹52,700'; arguments[0].dispatchEvent(new Event('change'));", slider);
+		//js.executeScript("arguments[0].aria-valuetext == '₹52,700'; arguments[0].dispatchEvent(new Event('change'));", slider);
 
+		//js.executeScript("arguments[0].setAttribute('aria-valuetext', '₹52,700');", slider);
+		
+		 js.executeScript(
+		            "arguments[0].value = 52,7000 ; " +
+		            "arguments[0].setAttribute('aria-valuetext', arguments[0].value + ' percent');" +
+		            "arguments[0].dispatchEvent(new Event('input'));",
+		            slider
+		        );
+
+		
 		Thread.sleep(10000);
 		
 	}

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extratopics.FileUpload3">
+      <class name="extratopics.FileUpload2">
         <methods>
-          <include name="setUp"/>
           <include name="webTableTest"/>
+          <include name="setUp"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- extratopics.FileUpload3 -->
+      </class> <!-- extratopics.FileUpload2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
