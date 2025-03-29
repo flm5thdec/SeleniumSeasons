@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="handlings.AlertHandling"/>   
+      <class name="handlings.FrameHandling2"/>
+      <class name="handlings.FrameHandling"/>
+      <class name="handlings.MultipleWindowHandle"/>
+      <class name="handlings.MultipleWindowHandle4"/>
+      <class name="handlings.MultipleWindowHandle5"/>
+      <class name="handlings.MultipleWindowHandle2"/>
+      <class name="handlings.MultipleWindowHandle3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2">
+    <classes>
+      <class name="handlings.AlertHandling"/>
+      <class name="handlings.FrameHandling2"/>
+      <class name="handlings.FrameHandling"/>
+      <class name="handlings.MultipleWindowHandle"/>
+      <class name="handlings.MultipleWindowHandle4"/>
+      <class name="handlings.MultipleWindowHandle5"/>
+      <class name="handlings.MultipleWindowHandle2"/>
+      <class name="handlings.MultipleWindowHandle3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
